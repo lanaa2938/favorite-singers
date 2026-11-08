@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favorite Singers</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+  <div class="container my-5">
+    <h1 class="mb-4">Favorite Singers</h1>
+    
+    <div class="row align-items-center">
+      <!-- Column 1: Image (col-sm-4) -->
+      <div class="col-sm-4 text-center mb-3 mb-sm-0">
+        <img src="https://cdn-icons-png.flaticon.com/512/3083/3083417.png" alt="Music Icon" class="img-fluid" style="max-height: 250px;">
+      </div>
+
+      <!-- Column 2: Bootstrap Table (col-sm-8) -->
+      <div class="col-sm-8">
+        <table class="table table-striped table-hover align-middle">
+          <thead class="table-info">
+            <tr>
+              <th scope="col">Singer</th>
+              <th scope="col">DOB</th>
+              <th scope="col">Best Songs</th>
+            </tr>
+          </thead>
+          <tbody id="singers-table-body">
+            <!-- JavaScript will populate rows here -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
